@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Work Ready Initiative - Project Charter (Modern)</title>
+<title>Preparing for an Entry-Level IT Job - Project Charter (Modern)</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
@@ -83,7 +83,107 @@
     /* Back-to-top */
     .mini { position: fixed; right: 18px; bottom: 18px; display: flex; gap: 8px; align-items: center; opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity .3s ease, transform .3s ease, visibility .3s; }
     .mini.show { opacity: 1; visibility: visible; transform: translateY(0); }
-  </style>
+  
+
+/* --- Fixes for Section 6 Deliverables table --- */
+#deliverables-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+#deliverables-table th, #deliverables-table td {
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+#deliverables-table thead th {
+  text-align: left;
+}
+#deliverables-table thead th:first-child,
+#deliverables-table tbody td:first-child {
+  text-align: center; /* Done column */
+  vertical-align: middle;
+}
+#deliverables-table ul { margin: 6px 0 6px 18px; padding-left: 0; }
+#deliverables-table li { margin: 4px 0; }
+@media (max-width: 900px) {
+  #deliverables-table { font-size: 14px; }
+}
+
+
+/* === Improved Deliverables Table Alignment (v2) === */
+#deliverables-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+#deliverables-table th, #deliverables-table td {
+  vertical-align: top;
+  text-align: left;
+  padding: 12px 14px;
+  border: 1px solid var(--ring);
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+#deliverables-table thead th {
+  background: #e2e8f0;
+  font-weight: 700;
+}
+#deliverables-table thead th:first-child,
+#deliverables-table tbody td:first-child {
+  text-align: center; /* Done column */
+  vertical-align: middle;
+}
+#deliverables-table col:nth-child(1) { width: 60px; }
+#deliverables-table col:nth-child(2) { width: 20%; }
+#deliverables-table col:nth-child(3) { width: 15%; }
+#deliverables-table col:nth-child(4) { width: 35%; }
+#deliverables-table col:nth-child(5) { width: 30%; }
+
+#deliverables-table ul { margin: 6px 0 6px 18px; padding-left: 0; }
+#deliverables-table li { margin: 4px 0; }
+
+@media (max-width: 900px) {
+  #deliverables-table { font-size: 14px; }
+}
+
+
+/* === Section 6 Deliverables table cleanup (v3) === */
+#deliverables-table { width: 100%; border-collapse: collapse; table-layout: auto; }
+#deliverables-table th, #deliverables-table td { vertical-align: top; padding: 12px 14px; border: 1px solid var(--ring); }
+#deliverables-table thead th { background: #e2e8f0; font-weight: 700; }
+#deliverables-table tbody td:first-child { width: 22%; }
+#deliverables-table tbody td:nth-child(2) { width: 14%; }
+#deliverables-table tbody td:nth-child(3) { width: 34%; }
+#deliverables-table tbody td:nth-child(4) { width: 30%; }
+#deliverables-table ul { margin: 6px 0 6px 18px; padding-left: 0; }
+#deliverables-table li { margin: 4px 0; }
+
+
+/* === Compact, text-fitted Deliverables table (v5) === */
+#deliverables-table {
+  width: auto;
+  border-collapse: collapse;
+  margin: 0 auto;
+  table-layout: auto;
+}
+#deliverables-table th, #deliverables-table td {
+  border: 1px solid var(--ring);
+  padding: 6px 10px;
+  vertical-align: top;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+}
+#deliverables-table thead th {
+  background: #e2e8f0;
+  font-weight: 700;
+}
+#deliverables-table tbody td:first-child { white-space: nowrap; }
+#deliverables-table ul { margin: 4px 0 4px 16px; padding-left: 0; }
+#deliverables-table li { margin: 2px 0; }
+#deliverables-table { font-size: 14px; }
+</style>
 </head>
 <body>
 <div class="app">
@@ -101,7 +201,7 @@
 <main class="main">
 <div class="container">
 <section class="header" id="top">
-<h1>Work Ready Initiative</h1>
+<h1>Preparing for an Entry-Level IT Job</h1>
 <p>Project Charter - Managing IT Projects Course</p>
 <div class="badges">
 <span class="badge">Course: Managing IT Projects</span>
@@ -116,10 +216,10 @@
 </summary>
 <div class="section-content">
 <div class="placeholder tile">
-<h3>Project Title: Database Designer Study</h3>
-<p><strong>Project Goal:</strong> To develop competency in database design skills and industry knowledge required for entry-level database designer positions, demonstrated through research, certifications, and small completed projects and resulting in an enhanced professional profile that increases my job market readiness.</p>
-<p><strong>Project Description:</strong> This semester-long project addresses my lack of direct work experience in database design by systematically researching industry requirements, developing technical competencies through hands-on database projects, and creating professional materials. I chose database design because it combines my interest in structured problem-solving with my desire to create systems that help organizations manage and utilize their data effectively—directly supporting businesses and ultimately helping people access better services and information.</p>
-<p><strong>Key Deliverables:</strong> Two complete database design projects with documentation, updated resume and LinkedIn profile, industry certifications, and a professional portfolio website showcasing my practical database design competency and readiness for entry-level roles.</p>
+<h3>Project Title: Preparing for an Entry-Level IT Job</h3>
+<p><strong>Project Goal:</strong> To become fully prepared for an entry-level IT position by developing relevant technical skills, professional competencies, and industry knowledge. This will be achieved through applied projects, certifications, and professional portfolio materials that demonstrate job readiness and adaptability across multiple IT roles.</p>
+<p><strong>Project Description:</strong> This project focuses on building both technical and professional capabilities needed to secure an entry-level position in the IT field. It includes researching industry expectations, developing essential IT and problem-solving skills through hands-on projects, and creating a professional portfolio with an updated resume and LinkedIn profile. By the end of the semester, I will be equipped to pursue and succeed in an entry-level IT role with confidence and competence.</p>
+<p><strong>Key Deliverables:</strong> Conduct interviews with professionals in relevant IT careers, complete research documentation, and produce updated resume, LinkedIn profile, and a professional portfolio website. These materials will demonstrate my understanding of industry expectations and readiness for entry-level IT positions.</p>
 </div>
 </div>
 </details>
@@ -309,7 +409,7 @@
 <span class="title">6. Deliverables</span>
 </summary>
 <div class="section-content">
-<table class="stakeholder-table">
+<table class="stakeholder-table" id="deliverables-table">
 <thead>
 <tr>
 <th>Deliverable Name</th>
@@ -319,65 +419,22 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="placeholder">Skill identification/research</td>
-<td class="placeholder">Intangible</td>
-<td class="placeholder">Identify and research skills needed for career, interview people in career, and complete by October 3rd.</td>
-<td class="placeholder">
-<ul>
+<tr><td class="placeholder">Skill identification/research</td><td class="placeholder">Intangible</td><td class="placeholder">Identify and research skills needed for career, interview people in career, and complete by November 7th.</td><td class="placeholder"><ul>
 <li>Word document containing research (At least 3 pages).</li>
 <li>Notes of interviewed people (1 or 2).</li>
 <li>At least 2 page analysis of interviews and research.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td class="placeholder">Learn other required skills from research.</td>
-<td class="placeholder">Intangible</td>
-<td class="placeholder">Ensure that I understand at least 10 skills well and learn at least 3 new skills by October 10th.</td>
-<td class="placeholder">
-<ul>
+</ul></td></tr>
+<tr><td class="placeholder">Learn other required skills from research.</td><td class="placeholder">Intangible</td><td class="placeholder">Ensure that I understand at least 10 skills well and learn at least 3 new skills by November 14th.</td><td class="placeholder"><ul>
 <li>Document sources used to learn skills.</li>
 <li>Learn at least 3 skills.</li>
 <li>Update (or learn) understanding of 10 skills.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td class="placeholder">Certifications</td>
-<td class="placeholder">Tangible</td>
-<td class="placeholder">Obtain Oracle Database Certifications (Free) by October 24th</td>
-<td class="placeholder">
-<ul>
+</ul></td></tr>
+<tr><td class="placeholder">Certifications</td><td class="placeholder">Tangible</td><td class="placeholder">Obtain Oracle Database Certifications (Free) by November 28th</td><td class="placeholder"><ul>
 <li>Complete 1-6 free Oracle Database Trainings</li>
 <li>Complete 1-6 free Oracle Database Certifications</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td class="placeholder">Career Qualifications: Elevator pitch, LinkedIn and Resume</td>
-<td class="placeholder">Tangible</td>
-<td class="placeholder">Update elevator pitch, LinkedIn and resume with new skills by October 31st</td>
-<td class="placeholder">
-<ul>
-<li>Update Resume</li>
-<li>Update LinkedIn profile</li>
-<li>Update elevator pitch</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td class="placeholder">Website</td>
-<td class="placeholder">Tangible</td>
-<td class="placeholder">Create website to showcase progress and completion of project by November 7th</td>
-<td class="placeholder">
-<ul>
-<li>Have good presentation with UI.</li>
-<li>Have all information needed with several tabs.</li>
-</ul>
-</td>
-</tr>
-</tbody>
+</ul></td></tr>
+<tr><td class="placeholder">Career Qualifications &amp; Portfolio Website</td><td class="placeholder">Tangible</td><td class="placeholder">Update elevator pitch, LinkedIn, and resume; design and publish a portfolio website that showcases project work and readiness for entry-level IT roles by December 12th.</td><td class="placeholder"><ul><li>Update Resume</li><li>Update LinkedIn profile</li><li>Update elevator pitch</li><li>Have good presentation with UI.</li><li>Have all information needed with several tabs.</li><li>Portfolio website live with at least 2 project pages and an updated About/Contact section.</li></ul></td></tr>
+<tr><td class="placeholder">Interviewing Professionals</td><td class="placeholder">Intangible</td><td class="placeholder">Conduct at least two interviews with IT professionals to understand career paths, skill expectations, and industry trends by November 21st.</td><td class="placeholder"><ul><li>Completed at least 2 professional interviews.</li><li>Summarized insights in a written reflection (minimum 2 pages).</li><li>Extracted 3–5 actionable steps for improving readiness.</li></ul></td></tr><tr><td class="placeholder">Job Applications</td><td class="placeholder">Tangible</td><td class="placeholder">Identify, tailor materials for, and submit applications to 6–10 entry-level IT roles that align with my skills and interests by December 12th.</td><td class="placeholder"><ul><li>Target list of 10 roles/companies with role links.</li><li>Tailored resume and cover letter prepared for each application.</li><li>At least 6 applications submitted (with confirmation screenshots or emails).</li><li>Tracking sheet maintained (company, role, date submitted, status, follow-up date).</li><li>Follow-up email sent 1–2 weeks after submission if no response.</li></ul></td></tr></tbody>
 </table>
 </div>
 </details>
@@ -421,7 +478,7 @@
 <summary class="section-header">
 <span class="title">10. Status Reports</span>
 </summary>
-<div class="section-content"><p>This section consolidates weekly project status reports for the Work Ready Initiative.</p><div class="tile"><h3>Week 6 Status Report (Sept 23–29, 2025)</h3><p><strong>Overall Health: </strong>🟢 ON TRACK</p><p><strong>Summary: </strong>Researching role/skills for Database Designer; gathered articles, job postings, and a LinkedIn profile; next up: organize/assess findings and begin scheduling interviews.</p><h4>Accomplishments</h4><ul><li>Found 2 articles describing role and requirements</li><li>Collected 10 relevant job listings</li><li>Found 1 LinkedIn profile of a Database Designer</li></ul><h4>Plan for Next Week</h4><ul><li>Find 5 more job listings</li><li>Find 2 more LinkedIn profiles</li><li>Organize and analyze gathered info</li><li>Identify and reach out to interviewees</li></ul><h4>Issues &amp; Risks / Mitigations</h4><p>No issues or risks identified this period</p><h4>Upcoming Milestones</h4><table class="stakeholder-table"><thead><tr><th>Milestone</th><th>Target Date</th><th>Status</th></tr></thead><tbody><tr><td>Skill Identification/Research</td><td>10/06/2025</td><td>ON TRACK</td></tr><tr><td>Learning Skills</td><td>10/13/2025</td><td>ON TRACK</td></tr><tr><td>Certifications</td><td>10/27/2025</td><td>ON TRACK</td></tr></tbody></table><h4>Changes Since Last Report</h4><ul><li>No changes to report</li></ul></div><div class="tile"><h3>Week 7 Status Report (Oct 6, 2025)</h3><p><strong>Overall Health: </strong>🟡 AT RISK</p><p><strong>Summary: </strong>Started LinkedIn Learning: SQL Essentials (first 4 sections, notes and quizzes). Interview not yet scheduled; schedule is slipping, plan to increase study time to recover.</p><h4>Accomplishments</h4><ul><li>Studied first 4 sections of SQL Essentials</li><li>Took notes throughout course</li><li>Completed 2 mini quizzes with good performance</li></ul><h4>Plan for Next Week</h4><ul><li>Complete career research analysis</li><li>Set up and complete an interview</li><li>Continue SQL practice/review</li></ul><h4>Issues &amp; Risks / Mitigations</h4><p>Behind schedule (MEDIUM). Mitigation: increase weekly effort (target ~180 minutes) to recover.</p><h4>Upcoming Milestones</h4><table class="stakeholder-table"><thead><tr><th>Milestone</th><th>Target Date</th><th>Status</th></tr></thead><tbody><tr><td>Skill Identification/Research</td><td>10/05/2025</td><td>DELAYED</td></tr><tr><td>Learning Skills</td><td>10/12/2025</td><td>DELAYED</td></tr><tr><td>Certifications</td><td>10/26/2025</td><td>DELAYED</td></tr></tbody></table><h4>Changes Since Last Report</h4><ul><li>2025-10-06: Adjusted milestone dates and increased pacing to recover schedule</li></ul></div></div>
+<div class="section-content"><p>This section consolidates weekly project status reports for the Preparing for an Entry-Level IT Job.</p><div class="tile"><h3>Week 6 Status Report (Sept 23–29, 2025)</h3><p><strong>Overall Health: </strong>🟢 ON TRACK</p><p><strong>Summary: </strong>Researching role/skills for Database Designer; gathered articles, job postings, and a LinkedIn profile; next up: organize/assess findings and begin scheduling interviews.</p><h4>Accomplishments</h4><ul><li>Found 2 articles describing role and requirements</li><li>Collected 10 relevant job listings</li><li>Found 1 LinkedIn profile of a Database Designer</li></ul><h4>Plan for Next Week</h4><ul><li>Find 5 more job listings</li><li>Find 2 more LinkedIn profiles</li><li>Organize and analyze gathered info</li><li>Identify and reach out to interviewees</li></ul><h4>Issues &amp; Risks / Mitigations</h4><p>No issues or risks identified this period</p><h4>Upcoming Milestones</h4><table class="stakeholder-table"><thead><tr><th>Milestone</th><th>Target Date</th><th>Status</th></tr></thead><tbody><tr><td>Skill Identification/Research</td><td>11/07/2025</td><td>ON TRACK</td></tr><tr><td>Learning Skills</td><td>11/14/2025</td><td>ON TRACK</td></tr><tr><td>Certifications</td><td>11/28/2025</td><td>ON TRACK</td></tr></tbody></table><h4>Changes Since Last Report</h4><ul><li>No changes to report</li></ul></div><div class="tile"><h3>Week 7 Status Report (Oct 6, 2025)</h3><p><strong>Overall Health: </strong>🟡 AT RISK</p><p><strong>Summary: </strong>Started LinkedIn Learning: SQL Essentials (first 4 sections, notes and quizzes). Interview not yet scheduled; schedule is slipping, plan to increase study time to recover.</p><h4>Accomplishments</h4><ul><li>Studied first 4 sections of SQL Essentials</li><li>Took notes throughout course</li><li>Completed 2 mini quizzes with good performance</li></ul><h4>Plan for Next Week</h4><ul><li>Complete career research analysis</li><li>Set up and complete an interview</li><li>Continue SQL practice/review</li></ul><h4>Issues &amp; Risks / Mitigations</h4><p>Behind schedule (MEDIUM). Mitigation: increase weekly effort (target ~180 minutes) to recover.</p><h4>Upcoming Milestones</h4><table class="stakeholder-table"><thead><tr><th>Milestone</th><th>Target Date</th><th>Status</th></tr></thead><tbody><tr><td>Skill Identification/Research</td><td>11/07/2025</td><td>DELAYED</td></tr><tr><td>Learning Skills</td><td>11/14/2025</td><td>DELAYED</td></tr><tr><td>Certifications</td><td>11/28/2025</td><td>DELAYED</td></tr></tbody></table><h4>Changes Since Last Report</h4><ul><li>2025-10-06: Adjusted milestone dates and increased pacing to recover schedule</li></ul></div><div class="tile"><h3>Week 8 Status Report (Oct 13, 2025)</h3><p><strong>Overall Health: </strong>🟡 AT RISK</p><p><strong>Summary: </strong>Gathered more research information, completed the SQL Essentials LinkedIn course, and began preparing for interviews. Need to finalize interview questions, find participants, and conduct at least one interview to stay on track.</p><h4>Accomplishments</h4><ul><li>Gathered additional research information.</li><li>Summarized overall findings from previous weeks.</li><li>Completed SQL Essentials LinkedIn Learning course.</li></ul><h4>Plan for Next Week</h4><ul><li>Prepare interview questions.</li><li>Find one or two professionals to interview.</li><li>Conduct at least one interview if scheduling allows.</li><li>Start a new LinkedIn Learning course in a less familiar IT area.</li></ul><h4>Issues &amp; Risks / Mitigations</h4><p>Behind schedule (MEDIUM). Mitigation: Complete the first milestone soon and progress on the second. Some flexibility remains due to previous schedule adjustments, but the timeline is tightening.</p><h4>Upcoming Milestones</h4><table class="stakeholder-table"><thead><tr><th>Milestone</th><th>Target Date</th><th>Status</th></tr></thead><tbody><tr><td>Skill Identification/Research</td><td>11/07/2025</td><td>DELAYED</td></tr><tr><td>Learning Skills</td><td>11/14/2025</td><td>DELAYED</td></tr><tr><td>Certifications</td><td>11/28/2025</td><td>DELAYED</td></tr></tbody></table><h4>Changes Since Last Report</h4><ul><li>No major changes to report this week.</li></ul></div><div class="tile"><h3>Week 9 Status Report (Oct 20, 2025)</h3><p><strong>Overall Health: </strong>🟢 ON TRACK</p><p><strong>Summary: </strong>Updated goal and revised project charter. Progress is going well, continuing with the learning skills deliverable. Need to update the first deliverable slightly to align with the new goal.</p><h4>Accomplishments</h4><ul><li>Completed LinkedIn Learning: IT Help Desk for Beginners.</li><li>Updated Project Charter.</li><li>Revised project goals to better align with new focus.</li></ul><h4>Plan for Next Week</h4><ul><li>Add to first deliverable to align with new goal.</li><li>Finish two more LinkedIn Learning courses.</li><li>Update Jira board with current progress.</li></ul><h4>Upcoming Milestones</h4><table class="stakeholder-table"><thead><tr><th>Milestone</th><th>Target Date</th><th>Status</th></tr></thead><tbody><tr><td>Skill Identification</td><td>11/06/2025</td><td>ON TRACK</td></tr><tr><td>Learn Skills</td><td>11/13/2025</td><td>ON TRACK</td></tr><tr><td>Interview Professionals</td><td>11/20/2025</td><td>ON TRACK</td></tr></tbody></table><h4>Issues &amp; Risks / Mitigations</h4><p>No issues or risks identified for this reporting period.</p><h4>Changes Since Last Report</h4><ul><li>2025-10-20: Changed goal, adjusted deliverables, and updated project charter for alignment.</li></ul></div></div>
 </details>
 <div class="mini" id="backToTop">
 <a class="btn" href="#top">Back to top</a>
@@ -520,5 +577,27 @@
       });
     }
   </script>
-</body>
+<script>
+(function() {
+  const tbl = document.getElementById('deliverables-table');
+  if (!tbl) return;
+  // If our script injected a 'Done' column dynamically earlier, make sure header cell is centered
+  const headRow = tbl.tHead && tbl.tHead.rows && tbl.tHead.rows[0];
+  if (headRow && headRow.cells.length > 0) {
+    headRow.cells[0].style.textAlign = 'center';
+  }
+  // Ensure colgroup has 5 columns; if not, rebuild it
+  let cg = tbl.querySelector('colgroup');
+  if (!cg || cg.children.length !== 5) {
+    if (cg) cg.remove();
+    cg = document.createElement('colgroup');
+    ['60px','18%','12%','32%','38%'].forEach(w => {
+      const c = document.createElement('col');
+      c.style.width = w;
+      cg.appendChild(c);
+    });
+    tbl.insertBefore(cg, tbl.firstElementChild);
+  }
+})();
+</script></body>
 </html>
